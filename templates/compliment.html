@@ -3,12 +3,12 @@
 <head>
   <title>A Question</title>
   <link rel="stylesheet"
-        href="static/game.css">
+        href="static/style.css">
 </head>
 <body>
-  <p>
+  <h1>
     Do you want to play a game?
-  </p>
+  </h1>
   <form action ="/yesorno"> 
     <!-- Hi {{ person }}! I think you're {{ compliment }}! -->
     <input type="radio" name="answer" value="yes" id="yes-answer">
@@ -18,6 +18,11 @@
     <input type="submit">
     <!-- <a href="http://localhost:5001/yesorno">Proceed</a> -->
   </form>
-
 </body>
+<style>
+  body{
+  background-image: url('static/img/newyorkmermaids.png');
+}
+</style>
+
 </html>

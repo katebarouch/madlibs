@@ -1,0 +1,54 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: "fantasy", "luminari";
+    color:rgb(75, 50, 17);
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(75, 50, 17);
+    margin-bottom: 5vw;
+}
+
+body {
+    position: relative;
+    background-image: url('static/img/newyorkmermaids.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(250, 235, 215, 0.468);
+    z-index: 0; /* It's behind all content (assuming no other z-index is set) but in front of the body's background image */
+}
+
+/* This is to ensure content is rendered above the pseudo-element */
+h1, p, label {
+    position: relative;
+    z-index: 1;
+}
+
+label {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(75, 50, 17);
+}
+
+form {
+    position: relative;
+    z-index: 1;
+}
